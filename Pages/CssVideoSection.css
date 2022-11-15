@@ -1,0 +1,42 @@
+.MainVideoBar{
+    position: fixed;
+    left: 30%;
+    top:10%;
+    width: 40%;
+    height: 350px;
+}
+
+.MainVideoDescriptionsection{
+    position: fixed;
+    top: 45%;
+    left: 30%;
+    margin-bottom: 10%;
+}
+.ExtraContentSection{
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    left: -15%;
+    bottom: 11%;
+}
+
+tr{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+table{
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    margin-left: 15%;
+}
+
+.CourseNav {
+    width: 150px;
+    height: 150px;
+}

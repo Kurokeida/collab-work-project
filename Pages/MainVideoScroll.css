@@ -1,0 +1,108 @@
+.VideoDescriptionBar{
+    position: relative;
+    top: 120px;
+    right: 10%;
+}
+.HomePageVidScroll{
+    top: -140px;
+    left: 900px;
+}
+.ScrollVideoInfoBar{
+    background-color: rgb(161, 161, 161);
+    position: relative;
+    top: 231px;
+    left: 62%;
+    height: 50px;
+    width: 500px;
+}
+.VideoDescriptionBarTextSection{
+    position: relative;
+    left: -400px;
+    top: 150px;
+}
+.VideoUserIcon{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+.VideoOwnerName{
+    position: relative;
+    left: 6%;
+    bottom: 65%;
+}
+.VideoViewIcon{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    top: 10px;
+    left: 100px;
+    cursor: pointer;
+    z-index: 10;
+}
+.VideoViewIconText{
+    position: relative;
+    left: 165px;
+    top: -80px;
+}
+.VideoLikeIcon{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    left: 190px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+.VideoLikeIconText{
+    position: relative;
+    left: 290px;
+    top: -120px;
+}
+.VideoDownloadIcon{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    left: 290px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+.VideoShareIcon{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    left: 300px;
+    top: 10px;
+    cursor: copy;
+    z-index: 10;
+}
+.ExtraInfoSection{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.DiscountBar{
+    position: fixed;
+    top: 100px;
+    width: 200px;
+    background-color: #ffe45e;
+}
+
+  .SortText{
+    position: relative;
+  }
+
+  .TableRows a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+  }
+
+  table{
+    width: 100%;
+  }
+
+  

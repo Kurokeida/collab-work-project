@@ -1,0 +1,76 @@
+.HomePageContent{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.SixMonthCourses {
+    border: solid;
+    background-color: black;
+    border-width: 2px;
+    width: 60%;
+    margin-left: 20%;
+    background-color: #acf2ec;
+    border-radius: 10px;
+    padding-bottom: 4%;
+
+}
+
+.SocialOne{
+    margin-bottom: 0%;
+    width: 4%;
+    height: width;
+    padding: 2%;
+}
+
+.SocialTwo{
+    margin-bottom: 0%;
+    width: 4%;
+    height: width;
+    padding: 2%;
+}
+
+.SocialThree{
+    margin-bottom: 0%;
+    width: 4%;
+    height: width;
+    padding: 2%;
+}
+
+.SocialFour{
+    margin-bottom: 0%;
+    width: 4%;
+    height: width;
+    padding: 2%;
+}
+
+.SocialFive{
+    margin-bottom: 0%;
+    width: 4%;
+    height: width;
+    padding: 2%;
+}
+
+.SocialSection{
+    background-color: #acf2ec;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1%;
+    border: black;
+    border: solid;
+    border-width: 1px;
+    border-radius: 30px;
+}
+
+.OurCourses{
+    font-size: 350%;
+  }
+
+  .CourseHead{
+    font-size: 300%;
+    margin-bottom: 1%;
+  }
+
+  .CourseContent{
+    font-size: 250%;
+
+  }

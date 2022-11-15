@@ -1,0 +1,346 @@
+<html>
+
+    <link rel="stylesheet" href="CssMain.css">
+    <link rel="stylesheet" href="CartPageCss.css">
+    <link rel="stylesheet" href="HomePageCss.css">
+    <link rel="stylesheet" href="MainVideoScroll.css">
+
+
+    <title>
+        cart
+    </title>
+
+    <body>
+        <section class="DescriptionSection">
+            <a href="HomePage.html">
+            <img class="LogoMain" src="../Images/GroupLogo.jpg" alt="error"></img>
+            </a>
+            <div class="MenuSection">
+                <h1>Empowering the Nation</h>
+            </div>
+            <div class="Navigation1">
+                <a href="Courses/VideoSection.html">Courses</a>
+            </div>
+            <div class="Navigation2">
+                <a href="CartPage.html">Cart</a>
+            </div>
+            <div class="Navigation3">
+                <a href="ContactUs.html">Contact us</a>
+            </div>
+        
+            <form class="SearchBar" action="/action_page.php">
+                <div class="personIcon">
+                    <img class="personIcon" src="../Icons/person-outline.svg" alt="error"></img>
+                    <div class="dropdown-content">
+                        <a href="../Login.html">Login Page</a>
+                        <a href="../CreateAccount.html">Create an Account</a>
+                    </div>
+                </div>
+            </form>
+            </section>
+
+            <form class="InputSection" action="/action_page.php">
+                
+                <h2 class="MainHead"> Enter your details</h2>
+                <input class="NameInput" type="text" placeholder="Enter Name">
+                <input class="SurnameInput" type="text" placeholder="Enter Phone number">
+                <input class="GmailInput" type="text" placeholder="Example6@gmail.com">
+    
+    
+            </form>
+
+            <div class="TextSection">
+                <h3>Select the course you want to do:</h3>
+            </div>
+
+            <form class="container">
+                <br>
+                <input type="checkbox" class="checkmark" id="FirstAid" name="FirstAid" value="FirstAid" onclick="FirstAidOnclick()">
+                <label class="CheckboxLabels" for="FirstAid" > First Aid</label>
+                <label class="CheckBoxPrice">R1500,00</label><br> <br>
+
+                <input type="checkbox" class="checkmark" id="Sewing" name="Sewing" value="Sewing" onclick="SewingOnclick()">
+                <label class="CheckboxLabels" for="Sewing"> Sewing</label>
+                <label class="CheckBoxPrice">R1500,00</label><br> <br>
+
+
+                <input type="checkbox" class="checkmark" id="Landscaping" name="Landscaping" value="Landscaping" onclick="LandscapingOnclick()">
+                <label class="CheckboxLabels" for="Landscaping"> Landscaping</label>
+                <label class="CheckBoxPrice">R1500,00</label><br> <br>
+
+                <input type="checkbox" class="checkmark" id="LifeSkills" name="LifeSkills" value="LifeSkills" onclick="LifeSkillsOnclick()">
+                <label class="CheckboxLabels" for="LifeSkills"> Life Skills</label>
+                <label class="CheckBoxPrice">R1500,00</label><br> <br>
+
+                <input type="checkbox" class="checkmark" id="Cooking" name="Cooking" value="Cooking" onclick="CookingOnclick()">
+                <label class="CheckboxLabels" for="Cooking">Cooking</label>
+                <label class="CheckBoxPrice">R750,00</label><br> <br>
+
+
+                <input type="checkbox" class="checkmark" id="Garden" name="Garden Maintenance" value="Garden Maintenance" onclick="GardenOnclick()">
+                <label class="CheckboxLabels" for="Garden Maintenance">Garden Maintenance</label>
+                <label class="CheckBoxPrice">R750,00</label><br> <br>
+
+
+                <input type="checkbox" class="checkmark" id="Child" name="Child Minding" value="Child Minding" onclick="ChildOnclick()">
+                <label class="CheckboxLabels" for="Child">Child Minding</label>
+                <label class="CheckBoxPrice">R750,00</label><br> <br>
+
+
+
+                <label class="FinalPriceLabel" for="vehicle2"> Total:R <Text id="FinalPriceOutput">0</Text> <Text>Total with (15% VAT):<Text id="FinalPriceOutputWithVat">0</Text> </label> <br>
+                <input class="PurchaseButton" type="submit" value="Purchase">
+                
+            </form>
+
+        </section>
+
+    </section>
+    <script> 
+        const priceList = []
+
+        VatValue = 0.15
+
+        var tempPrice1 = 0
+        var temp_vat_holder = 0
+
+        var FirstAid = document.getElementById("FirstAid")
+        var Sewing = document.getElementById("Sewing")
+        var Landscaping = document.getElementById("Landscaping")
+        var LifeSkills = document.getElementById("LifeSkills")
+        var Cooking = document.getElementById("Cooking")
+        var Garden = document.getElementById("Garden")
+        var Child = document.getElementById("Child")
+
+        var FinalTextPrice = document.getElementById("FinalPriceOutput")
+        var FinalPriceOutputWithVat = document.getElementById("FinalPriceOutputWithVat")
+
+        function VatCalculationFunction(MainValue,VatValue){
+            FinalPriceOutputWithVat.innerText = MainValue*VatValue
+        }
+
+        ////First Aid
+        function FirstAidOnclick(){
+            if(FirstAid.checked == true){
+                priceList.push(1500)
+                
+                const sum = priceList.reduce((accumulator,value) =>{
+                    return accumulator + value;
+                },0)
+                FinalTextPrice.innerText = sum
+
+                VatCalculationFunction(sum,VatValue)
+
+            }
+
+            if(FirstAid.checked == false){
+                priceList.pop()
+                const sum = priceList.reduce((accumulator,value) =>{
+                    return accumulator + value;
+                },0)
+                FinalTextPrice.innerText = sum
+                FinalPriceOutputWithVat.innerText = sum
+
+                VatCalculationFunction(sum,VatValue)
+            }   
+        }
+        /////////////
+
+
+        ////Sewing
+        function SewingOnclick(){
+            if(Sewing.checked == true){
+                priceList.push(1500)
+                
+                const sum = priceList.reduce((accumulator,value) =>{
+                    return accumulator + value;
+                },0)
+                FinalTextPrice.innerText = sum
+
+                VatCalculationFunction(sum,VatValue)
+
+            }
+
+            if(Sewing.checked == false){
+                priceList.pop()
+                const sum = priceList.reduce((accumulator,value) =>{
+                    return accumulator + value;
+                },0)
+                FinalTextPrice.innerText = sum
+                FinalPriceOutputWithVat.innerText = sum
+
+                VatCalculationFunction(sum,VatValue)
+            }   
+        }
+        /////////////
+
+
+        ////Landscaping
+        function LandscapingOnclick(){
+            if(Landscaping.checked == true){
+                priceList.push(1500)
+                
+                const sum = priceList.reduce((accumulator,value) =>{
+                    return accumulator + value;
+                },0)
+                FinalTextPrice.innerText = sum
+
+                VatCalculationFunction(sum,VatValue)
+
+            }
+
+            if(Landscaping.checked == false){
+                priceList.pop()
+                const sum = priceList.reduce((accumulator,value) =>{
+                    return accumulator + value;
+                },0)
+                FinalTextPrice.innerText = sum
+                FinalPriceOutputWithVat.innerText = sum
+
+                VatCalculationFunction(sum,VatValue)
+            }   
+        }
+        /////////////
+
+        ////LifeSkills
+        function LifeSkillsOnclick(){
+            if(LifeSkills.checked == true){
+                priceList.push(1500)
+                
+                const sum = priceList.reduce((accumulator,value) =>{
+                    return accumulator + value;
+                },0)
+                FinalTextPrice.innerText = sum
+
+                VatCalculationFunction(sum,VatValue)
+
+            }
+
+            if(LifeSkills.checked == false){
+                priceList.pop()
+                const sum = priceList.reduce((accumulator,value) =>{
+                    return accumulator + value;
+                },0)
+                FinalTextPrice.innerText = sum
+                FinalPriceOutputWithVat.innerText = sum
+
+                VatCalculationFunction(sum,VatValue)
+            }   
+        }
+        /////////////
+
+         ////LifeSkills
+        function CookingOnclick(){
+            if(Cooking.checked == true){
+                priceList.push(1500)
+                
+                const sum = priceList.reduce((accumulator,value) =>{
+                    return accumulator + value;
+                },0)
+                FinalTextPrice.innerText = sum
+
+                VatCalculationFunction(sum,VatValue)
+
+            }
+
+            if(Cooking.checked == false){
+                priceList.pop()
+                const sum = priceList.reduce((accumulator,value) =>{
+                    return accumulator + value;
+                },0)
+                FinalTextPrice.innerText = sum
+                FinalPriceOutputWithVat.innerText = sum
+
+                VatCalculationFunction(sum,VatValue)
+            }   
+        }
+        /////////////
+        
+
+         ////Cooking
+         function CookingOnclick(){
+            if(Cooking.checked == true){
+                priceList.push(750)
+                
+                const sum = priceList.reduce((accumulator,value) =>{
+                    return accumulator + value;
+                },0)
+                FinalTextPrice.innerText = sum
+
+                VatCalculationFunction(sum,VatValue)
+
+            }
+
+            if(Cooking.checked == false){
+                priceList.pop()
+                const sum = priceList.reduce((accumulator,value) =>{
+                    return accumulator + value;
+                },0)
+                FinalTextPrice.innerText = sum
+                FinalPriceOutputWithVat.innerText = sum
+
+                VatCalculationFunction(sum,VatValue)
+            }   
+        }
+        /////////////
+
+
+        ////Garden
+        function GardenOnclick(){
+            if(Garden.checked == true){
+                priceList.push(750)
+                
+                const sum = priceList.reduce((accumulator,value) =>{
+                    return accumulator + value;
+                },0)
+                FinalTextPrice.innerText = sum
+
+                VatCalculationFunction(sum,VatValue)
+
+            }
+
+            if(Garden.checked == false){
+                priceList.pop()
+                const sum = priceList.reduce((accumulator,value) =>{
+                    return accumulator + value;
+                },0)
+                FinalTextPrice.innerText = sum
+                FinalPriceOutputWithVat.innerText = sum
+
+                VatCalculationFunction(sum,VatValue)
+            }   
+        }
+        /////////////
+
+
+
+         ////Child
+         function ChildOnclick(){
+            if(Child.checked == true){
+                priceList.push(750)
+                
+                const sum = priceList.reduce((accumulator,value) =>{
+                    return accumulator + value;
+                },0)
+                FinalTextPrice.innerText = sum
+
+                VatCalculationFunction(sum,VatValue)
+
+            }
+
+            if(Child.checked == false){
+                priceList.pop()
+                const sum = priceList.reduce((accumulator,value) =>{
+                    return accumulator + value;
+                },0)
+                FinalTextPrice.innerText = sum
+                FinalPriceOutputWithVat.innerText = sum
+
+                VatCalculationFunction(sum,VatValue)
+            }   
+        }
+        /////////////
+
+    </script>
+    </body>
+</html>

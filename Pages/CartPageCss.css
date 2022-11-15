@@ -1,0 +1,121 @@
+.InputSection{
+    position: relative;
+    top: 10%;
+}
+
+.NameInput{
+    width: 70%;
+    background-color: #ededed;
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    margin-left: 15%;
+    margin-bottom: 1%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.SurnameInput{
+  width: 70%;
+  background-color: #ededed;
+  color: rgb(0, 0, 0);
+  padding: 14px 20px;
+  margin-left: 15%;
+  margin-bottom: 1%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.GmailInput{
+  width: 70%;
+  background-color: #ededed;
+  color: rgb(0, 0, 0);
+  padding: 14px 20px;
+  margin-left: 15%;
+  margin-bottom: 1%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.TextSection{
+  position: relative;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    left: 10px;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 70%;
+    margin-left: 15%;
+    background-color: #acf2ec;
+    border-radius: 20px;
+    border: black;
+    border-width: 3;
+    border: solid;
+  }
+  
+
+  .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    cursor: pointer;
+  }
+  .CheckboxLabels{
+    position: fixed;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    background-color: #ededed;
+    width: 60%;
+    padding-left: 1%;  
+    margin-Left: 1% ;  
+  }
+
+  .CheckBoxPrice{
+    position: fixed;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    background-color: #ededed;
+    margin-left: 60%;
+  }
+
+  .FinalPriceLabel{
+    position: relative;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    background-color: #ededed;
+    width: 50%;
+    left: 1px;
+    top: 1%;
+    padding: 5px;
+  }
+  .PurchaseButton{
+    position: relative;
+    background-color: #17a0ca;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 50%;
+    border-radius: 20px;
+    margin-top: -2%;
+    margin-bottom: 1%;
+  }
+
+  .MainHead{
+    text-align: center;
+  }
